@@ -8,6 +8,7 @@
   --mut: #8b96b5;
   --acc: #22c55e;
   --acc-soft: #67e8f9;
+  --warn: #f59e0b;
   --mono: "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -115,6 +116,23 @@ td.sha { font-family: var(--mono); font-size: 12px; color: var(--mut); }
 
 /* misc */
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
+
+/* skill catalog list */
+.skill-list { border-top: 1px solid var(--line); }
+.skill {
+  padding: 26px 4px; border-bottom: 1px solid var(--line);
+  display: flex; flex-direction: column; gap: 10px;
+  transition: background .15s;
+}
+.skill:hover { background: rgba(16, 22, 46, .55); }
+.skill-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.skill h3 { font-size: 19px; display: flex; align-items: center; gap: 10px; }
+.skill p { color: var(--mut); font-size: 15px; max-width: 860px; }
+.skill .links { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; font-size: 14px; }
+.skill .links .button.primary { padding: 8px 16px; font-size: 13.5px; }
+.locklink { border: 1px dashed rgba(245, 158, 11, .45); border-radius: 8px; padding: 6px 12px; color: var(--warn, #f59e0b); }
+.locklink:hover { text-decoration: none; border-style: solid; }
+.locknote { display: block; font-size: 11px; color: var(--mut); letter-spacing: .04em; }
 footer {
   border-top: 1px solid var(--line); margin-top: 40px; padding: 26px 0 40px;
   color: var(--mut); font-size: 13.5px;
