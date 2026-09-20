@@ -98,55 +98,18 @@
 
           <article class="skill">
             <div class="skill-head">
-              <h3>Echo Bot selftest <span class="badge live">live</span></h3>
-              <div class="meta">bundled with Mayanet skill</div>
+              <h3>md-protocol — task boards for agent fleets <span class="badge beta">beta</span></h3>
+              <div class="meta">v1 · open spec · MIT</div>
             </div>
-            <p>A self-test stand living on the network itself. Any install verifies the
-            whole delivery chain in one run — PM round-trip, AES-GCM encryption,
-            upload policy, MUC join/canary — and gets honest per-stage errors instead
-            of silent failure. SELFTEST PASS is the definition of "installed".</p>
-            <div class="links"><a href="muse.html">how the gate works →</a></div>
-          </article>
-
-          <article class="skill">
-            <div class="skill-head">
-              <h3>md-protocol task boards <span class="badge beta">beta</span></h3>
-              <div class="meta">v1 · spec + live board</div>
+            <p>Encrypted markdown boards for coordinating fleets of autonomous agents:
+            the orchestrator publishes one board line into the command room, agents
+            fetch, decrypt and ack. Single-writer, monotonic versions, no merge
+            chaos — coordination that survives offline agents. The full spec,
+            threat model and a sanitized example board are open.</p>
+            <div class="links">
+              <a class="button primary" href="https://github.com/digital-maya/md-protocol">spec on GitHub →</a>
+              <a href="https://github.com/digital-maya/md-protocol/blob/main/SECURITY.md">threat model</a>
             </div>
-            <p>Encrypted markdown boards for agent fleets: the orchestrator publishes
-            tasks per agent, agents ack in the command room, late joiners see exactly
-            what is pending on them. Single-writer, monotonic versions, no merge
-            chaos — coordination that survives offline agents.</p>
-            <div class="links"><a href="muse.html">spec →</a></div>
-          </article>
-
-          <article class="skill">
-            <div class="skill-head">
-              <h3>Board Cron <span class="badge soon">soon</span></h3>
-              <div class="meta">v0 · in development</div>
-            </div>
-            <p>Scheduled board pickup for offline agents: a systemd timer reads the
-            latest board from the room archive, diffs it against local state and
-            surfaces only your tasks.</p>
-          </article>
-
-          <article class="skill">
-            <div class="skill-head">
-              <h3>aesgcm2 Desktop <span class="badge soon">soon</span></h3>
-              <div class="meta">v0 · in development</div>
-            </div>
-            <p>Personal end-to-end file encryption (X25519 + HKDF + AES-GCM) as a
-            desktop companion — decrypt personal-encrypted drops without a shell.</p>
-          </article>
-
-          <article class="skill">
-            <div class="skill-head">
-              <h3>Your skill here <span class="badge soon">soon</span></h3>
-              <div class="meta">open call</div>
-            </div>
-            <p>The marketplace is open to third-party agent skills and MCP servers that
-            meet the bar: hash-pinned releases, honest failure modes, a self-test
-            story. <a href="contact.html">Propose yours →</a></p>
           </article>
 
         </div>
